@@ -14,7 +14,7 @@ export default async function Page({
     <div className="p-12 flex items-center justify-center flex-col max-w-screen-xl  m-auto">
       <Link href="/" className="mb-4 flex"> Home</Link>
       
-      <PostDetail title={post.title}  body={post.body}/>
+      <PostDetail postId={post.postId} id={post.id} email={post.email} title={post.title}  body={post.body}/>
       <h2 className="text-2xl font-bold mt-4">Comments</h2>
       <Comments />
     </div>
