@@ -3,5 +3,6 @@ export type Post = {
   id: number;
   title: string;
   email: string;
+  name?: string;
   body: string;
 };
