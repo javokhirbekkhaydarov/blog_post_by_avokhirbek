@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Post } from "@/types/Post";
 async function Comments() {
   const endpoint = process.env.comments;
-  const res = await fetch(endpoint);
+    const res = await fetch(`${endpoint}`);
   const comments = await res.json();
 
   return (

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Post } from "@/types/Post";
 async function Posts() {
   const endpoint = process.env.posts;
-  const res = await fetch(endpoint);
+    const res = await fetch(`${endpoint}`);
   const posts = await res.json();
 
   return (
