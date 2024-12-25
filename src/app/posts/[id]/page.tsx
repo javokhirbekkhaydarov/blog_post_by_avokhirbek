@@ -11,7 +11,7 @@ export default async function Page({
   const res = await fetch(endpoint + `/${(await params).id}`);
   const post: Post = await res.json();
   return (
-    <div className="p-12">
+    <div className="p-12 flex items-center justify-center flex-col max-w-screen-xl  m-auto">
       <Link href="/" className="mb-4 flex"> Home</Link>
       
       <PostDetail title={post.title}  body={post.body}/>
